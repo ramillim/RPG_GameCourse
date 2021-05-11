@@ -7,13 +7,16 @@ public class ThirdPersonMover : MonoBehaviour
 {
     [SerializeField] private float _turnspeed = 1000f;
     [SerializeField] private float moveSpeed = 5f;
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
     private void Update()
     {
         var mouseMovement = Input.GetAxis("Mouse X");
         transform.Rotate(0, mouseMovement* Time.deltaTime * _turnspeed, 0);
-        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            rb = GetComponent<Rigidbody>();
+        }
     }
 
     private void FixedUpdate()
