@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/.idea.GameCourse_rpg.iml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../:\GameCourse\GameCourse_rpg\.idea\.idea.GameCourse_rpg\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
