@@ -31,13 +31,14 @@ public class ThirdPersonMover : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && vertical <= 1f)
             vertical *= 2f;
 
         var velocity = new Vector3(horizontal, 0, vertical);
         velocity *= moveSpeed * Time.fixedDeltaTime;
         Vector3 offset = transform.rotation * velocity;
         rb.MovePosition(transform.position + offset);
-        _anim.SetFloat("Speed", vertical, 0.1f, Time.deltaTime);
+        _anim.SetFloat("Horizontal", horizontal, 0.1f, Time.deltaTime);
+        _anim.SetFloat("Vertical", vertical, 0.1f, Time.deltaTime);
     }
 }
