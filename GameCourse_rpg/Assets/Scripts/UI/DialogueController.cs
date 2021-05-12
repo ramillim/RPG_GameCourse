@@ -6,12 +6,12 @@ using Ink.Runtime;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextAsset _dialogue;
+    
     [SerializeField] private TMP_Text _storyText;
     [SerializeField] private Button[] _choiceButtons;
     Story _story;
     [ContextMenu("Start Dialogue")]
-    private void StartDialogue()
+    public void StartDialogue(TextAsset _dialogue)
     {
         _story = new Story(_dialogue.text);
         RefreshView();
