@@ -7178,6 +7178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000d6b2ba3a0e734fa4651497fece36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogue: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+  _storyText: {fileID: 1149197606}
+  _choiceButtons:
+  - {fileID: 1009069791}
+  - {fileID: 425741254}
+  - {fileID: 114598671}
+  - {fileID: 1746561373}
 --- !u!114 &2047516518
 MonoBehaviour:
   m_ObjectHideFlags: 0
