@@ -40,4 +40,17 @@ public class DialogueController : MonoBehaviour
             }
         }
     }
+
+    void HandleTages()
+    {
+        foreach (var tag in _story.currentTags)
+        {
+            Debug.Log(tag);
+            if (tag.StartsWith("E."))
+            {
+                string eventName = tag.Remove(0, 2);
+                GameEvent.RaiseEvent(eventName);
+            }
+        }
+    }
 }
