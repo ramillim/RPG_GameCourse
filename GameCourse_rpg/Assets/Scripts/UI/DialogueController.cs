@@ -39,9 +39,10 @@ public class DialogueController : MonoBehaviour
                 });
             }
         }
+        HandleTags();
     }
 
-    void HandleTages()
+    void HandleTags()
     {
         foreach (var tag in _story.currentTags)
         {

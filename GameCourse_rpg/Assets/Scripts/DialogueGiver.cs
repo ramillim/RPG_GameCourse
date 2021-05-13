@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class DialogueGiver : MonoBehaviour
 {
+    public enum GiverType
+    {
+        Npc,
+        Terminal
+    }
+
+    public GiverType giver;
     [SerializeField] private TextAsset _dialogue;
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +19,8 @@ public class DialogueGiver : MonoBehaviour
         if (player != null)
         {
             FindObjectOfType<DialogueController>().StartDialogue(_dialogue);
-            transform.LookAt(player.transform);
+            if(giver == GiverType.Npc)
+                transform.LookAt(player.transform);
         }
     }
 }
