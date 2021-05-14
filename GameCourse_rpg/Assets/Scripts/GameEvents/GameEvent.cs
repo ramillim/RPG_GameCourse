@@ -20,7 +20,7 @@ public class GameEvent : ScriptableObject
         if(_gameEventListeners.Count == 0)
             _listenedEvents.Remove(this);
     }
-
+    [ContextMenu("Invoke")]
     public void Invoke()
     {
         foreach (var gameEventListener in _gameEventListeners)
