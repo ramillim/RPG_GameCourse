@@ -267,11 +267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1088640776, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000034047414
+      value: 0.000000038300684
       objectReference: {fileID: 0}
     - target: {fileID: 1088640776, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000018269346
+      value: -0.00000002055159
       objectReference: {fileID: 0}
     - target: {fileID: 1424086709, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_FollowOffset.z
@@ -303,11 +303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5977087780470840160, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000023654554
+      value: 0.000000020331687
       objectReference: {fileID: 0}
     - target: {fileID: 5977087780470840160, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000005945423
+      value: -0.000000005110241
       objectReference: {fileID: 0}
     - target: {fileID: 5977087780470840167, guid: a49b960a10bcf5c4593b174dacb50bba, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -3731,7 +3731,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
