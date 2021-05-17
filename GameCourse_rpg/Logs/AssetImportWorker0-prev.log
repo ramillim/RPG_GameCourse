@@ -15,11 +15,11 @@ I:/GameCourse/RPG_GameCourse/GameCourse_rpg
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62082
+54495
 Successfully changed project path to: I:/GameCourse/RPG_GameCourse/GameCourse_rpg
 I:/GameCourse/RPG_GameCourse/GameCourse_rpg
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 88.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 94.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,401 +35,63 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002580 seconds.
+Registered in 0.002745 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 106.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 95.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.242 seconds
+- Completed reload, in  1.206 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003561 seconds.
+Registered in 0.003428 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.056 seconds
+- Completed reload, in  1.060 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3640 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.3 MB.
-System memory in use after: 135.5 MB.
+System memory in use before: 135.6 MB.
+System memory in use after: 135.8 MB.
 
 Unloading 134 unused Assets to reduce memory usage. Loaded Objects now: 4053.
-Total: 2.755400 ms (FindLiveObjects: 0.376100 ms CreateObjectMapping: 0.106000 ms MarkObjects: 2.072000 ms  DeleteObjects: 0.200400 ms)
+Total: 2.688900 ms (FindLiveObjects: 0.326900 ms CreateObjectMapping: 0.106800 ms MarkObjects: 2.053000 ms  DeleteObjects: 0.201300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Asset Packs/Survival Character
-  artifactKey: Guid(f8a9cb338ad04a24a84b554bef6ae6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character using Guid(f8a9cb338ad04a24a84b554bef6ae6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfa7278b83838ee689a90d7ab669387') in 0.008045 seconds
-  Import took 0.012672 seconds .
+  path: Assets/Scripts/UI/DialogueController.cs
+  artifactKey: Guid(000d6b2ba3a0e734fa4651497fece36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/DialogueController.cs using Guid(000d6b2ba3a0e734fa4651497fece36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a20fbbf9df80d80f226536e2ea3d50') in 0.023476 seconds
+  Import took 0.030051 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.829615 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs
-  artifactKey: Guid(fa1c0aceb54c7e14e8f01ea19ba07dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs using Guid(fa1c0aceb54c7e14e8f01ea19ba07dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4c3ea90bdc462fc44e13c8d50db65f') in 0.005053 seconds
-  Import took 0.009715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.085579 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter (cinamatic quality 4LOD).prefab
-  artifactKey: Guid(4e5802613f7f4e74bbad9a0a17ac80da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter (cinamatic quality 4LOD).prefab using Guid(4e5802613f7f4e74bbad9a0a17ac80da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7733ff4d5aed00509f0f6a0da08697e') in 0.115909 seconds
-  Import took 0.122064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_very_low.prefab
-  artifactKey: Guid(9b2d68afd303e6a4e9c08d8c16243c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_very_low.prefab using Guid(9b2d68afd303e6a4e9c08d8c16243c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366ed35ec1483412379c21c447dccbf6') in 0.015532 seconds
-  Import took 0.020130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_low.prefab
-  artifactKey: Guid(b3e79cbf49ad8104bbf0b11dfe537ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_low.prefab using Guid(b3e79cbf49ad8104bbf0b11dfe537ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95bdbdeb636aa87f32fb9f60b7fcde6c') in 0.014118 seconds
-  Import took 0.018741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_high.prefab
-  artifactKey: Guid(5b900f9858a991b4b87d5d67bc4a90ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_high.prefab using Guid(5b900f9858a991b4b87d5d67bc4a90ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfae01bd204faa3dd9b3ec514c2f6fac') in 0.022054 seconds
-  Import took 0.026871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter (game quality 3LOD).prefab
-  artifactKey: Guid(39e0661ae5d09e841b10054163198879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter (game quality 3LOD).prefab using Guid(39e0661ae5d09e841b10054163198879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2ec5efc6bf645f13eb5edf43ad03c3') in 0.019032 seconds
-  Import took 0.024252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_medium.prefab
-  artifactKey: Guid(657f6157bf2b35d44aeef4b804614fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Prefabs/SurvivalCharacter_medium.prefab using Guid(657f6157bf2b35d44aeef4b804614fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f791f37ff691ed17d66f2c5c43fbd37') in 0.016979 seconds
-  Import took 0.022162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.960860 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials
-  artifactKey: Guid(2043a8049f20f32408c979d4953b6f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials using Guid(2043a8049f20f32408c979d4953b6f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a175b46c58621784dbc7af80937f7732') in 0.007520 seconds
-  Import took 0.012001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.060213 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Accessories.mat
-  artifactKey: Guid(fb86a74eefca3b143b1811511ebee6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Accessories.mat using Guid(fb86a74eefca3b143b1811511ebee6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f873499c849a5e43ca7ef9ac6317f9') in 0.034748 seconds
-  Import took 0.039627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Eyes.mat
-  artifactKey: Guid(1bb9464e8ba0909498d4c566478c9ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Eyes.mat using Guid(1bb9464e8ba0909498d4c566478c9ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b902fbc9e2e1029b860e98a61527a6') in 0.009113 seconds
-  Import took 0.013389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Mouth.mat
-  artifactKey: Guid(e045dc75898047749bc89b7cc3f15717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Mouth.mat using Guid(e045dc75898047749bc89b7cc3f15717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72954d5b3d63fdac1a202444ee5ca9de') in 0.009234 seconds
-  Import took 0.014617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/EyeReflection.mat
-  artifactKey: Guid(ada8995d707bab7498b2142e55ff7a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/EyeReflection.mat using Guid(ada8995d707bab7498b2142e55ff7a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ba15ff2a69f7df0aefc1008e9d8f8e') in 0.008508 seconds
-  Import took 0.013402 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Lashes.mat
-  artifactKey: Guid(1fa25c155ad34bb4690acbce07a3dabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Lashes.mat using Guid(1fa25c155ad34bb4690acbce07a3dabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adba6063d0a9804042248fb759d69fc4') in 0.007834 seconds
-  Import took 0.012888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/transparent.mat
-  artifactKey: Guid(51d82d66c56161b4f99b8e4eb63fcdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/transparent.mat using Guid(51d82d66c56161b4f99b8e4eb63fcdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3904878eecef777a9b87a806111179') in 0.009473 seconds
-  Import took 0.014280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Body_hi.mat
-  artifactKey: Guid(512100a9918056e4f89fe814391e5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Body_hi.mat using Guid(512100a9918056e4f89fe814391e5004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17f676099c25f2ce59e4e606ecc8210') in 0.008361 seconds
-  Import took 0.013357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Clothes.mat
-  artifactKey: Guid(258be657d9c89bd42ba55fb35a697f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Clothes.mat using Guid(258be657d9c89bd42ba55fb35a697f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98dfac325838b914cdbc190722d17cc') in 0.008620 seconds
-  Import took 0.013847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Body_medium.mat
-  artifactKey: Guid(46a8606d7fbc41e43b47ad1c270ec27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Body_medium.mat using Guid(46a8606d7fbc41e43b47ad1c270ec27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6bf74b0d8915d40df614387b94b3ee') in 0.008304 seconds
-  Import took 0.012791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/BagPack.mat
-  artifactKey: Guid(3129ccd0a97851747bf6dc6f0314045c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/BagPack.mat using Guid(3129ccd0a97851747bf6dc6f0314045c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cc25d4baabdb990c1960646a13511c') in 0.009356 seconds
-  Import took 0.014536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/Brows.mat
-  artifactKey: Guid(669a59f259fdb5b40bac59d244720790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/Brows.mat using Guid(669a59f259fdb5b40bac59d244720790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeba35a569d639f5ef428458df6e8536') in 0.008919 seconds
-  Import took 0.013685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Asset Packs/Survival Character/Materials/TearWetness.mat
-  artifactKey: Guid(5aefd78731887814ea3442777d86a66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Materials/TearWetness.mat using Guid(5aefd78731887814ea3442777d86a66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f7922a5f8735b57c89b32d35e65410') in 0.008654 seconds
-  Import took 0.012952 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003835 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.910 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3583 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.7 MB.
-System memory in use after: 148.9 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4098.
-Total: 2.522700 ms (FindLiveObjects: 0.316000 ms CreateObjectMapping: 0.092500 ms MarkObjects: 2.058300 ms  DeleteObjects: 0.055200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 168.149414 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX
-  artifactKey: Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX using Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624a53b314bbb6b01aea72d2c96bc165') in 0.097517 seconds
-  Import took 0.103398 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_low.fbx
-  artifactKey: Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_low.fbx using Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856db7ba47da6bcd41a32afddba7234e') in 0.039171 seconds
-  Import took 0.044392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX
-  artifactKey: Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX using Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0deed52c815a54b9e5109073fe834c7e') in 0.028852 seconds
-  Import took 0.033963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_low.fbx
-  artifactKey: Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_low.fbx using Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856db7ba47da6bcd41a32afddba7234e') in 0.028223 seconds
-  Import took 0.033350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX
-  artifactKey: Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX using Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0deed52c815a54b9e5109073fe834c7e') in 0.025834 seconds
-  Import took 0.030949 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX
-  artifactKey: Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX using Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624a53b314bbb6b01aea72d2c96bc165') in 0.035603 seconds
-  Import took 0.040542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX
-  artifactKey: Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX using Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd2bac055f5abc7621d12e53670cdd5') in 0.027976 seconds
-  Import took 0.033291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002230 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX
-  artifactKey: Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX using Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd2bac055f5abc7621d12e53670cdd5') in 0.027268 seconds
-  Import took 0.032560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.494976 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX
-  artifactKey: Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_hi.FBX using Guid(ced2e1a7797acb442bc9cc4376aa826a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74115a50b881940d5f5ce76184cd2e29') in 0.034610 seconds
-  Import took 0.040451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_low.fbx
-  artifactKey: Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_low.fbx using Guid(f205285e1efd9a44580920efaa9ff169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2661a6b3048d9c6739699170147c27b7') in 0.024604 seconds
-  Import took 0.029366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX
-  artifactKey: Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_medium.FBX using Guid(b6961014ae5e42946943bf5e55af578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1397b6742b810400c65e2283ad117920') in 0.025781 seconds
-  Import took 0.030447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX
-  artifactKey: Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Survival Character/Mesh/character_very_low.FBX using Guid(8f410c137b2c2184a8a65815d483bf99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18df80c55f7cff4755408e51e86c805f') in 0.026832 seconds
-  Import took 0.031559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.073285 seconds.
-  path: Assets/Prefabs/DroneParent.prefab
-  artifactKey: Guid(8487fc7e6e1e4264b967b4e8bd06728b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DroneParent.prefab using Guid(8487fc7e6e1e4264b967b4e8bd06728b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e41b4e41200408d1819ef5fd666b81') in 0.162072 seconds
-  Import took 0.167863 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Prefabs/Robot.prefab
-  artifactKey: Guid(a49b960a10bcf5c4593b174dacb50bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Robot.prefab using Guid(a49b960a10bcf5c4593b174dacb50bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bfd88a5f706efc39fdd55eaaebb6b1') in 0.098521 seconds
-  Import took 0.104133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.179253 seconds.
-  path: Assets/Prefabs/Main Camera.prefab
-  artifactKey: Guid(304f6e17c4a2a6c4db978cf22f052e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Main Camera.prefab using Guid(304f6e17c4a2a6c4db978cf22f052e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a9438d0c53ccb05f0525addb316dea') in 0.006804 seconds
-  Import took 0.011783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006543 seconds.
-  path: Assets/Prefabs/Main Camera.prefab
-  artifactKey: Guid(304f6e17c4a2a6c4db978cf22f052e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Main Camera.prefab using Guid(304f6e17c4a2a6c4db978cf22f052e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a9438d0c53ccb05f0525addb316dea') in 0.002481 seconds
-  Import took 0.007236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.187538 seconds.
-  path: Assets/Prefabs/Robot.prefab
-  artifactKey: Guid(a49b960a10bcf5c4593b174dacb50bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Robot.prefab using Guid(a49b960a10bcf5c4593b174dacb50bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a87e1c61d4cb14ca86f798fa01c30b5') in 0.031659 seconds
-  Import took 0.037728 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.848906 seconds.
-  path: Assets/Prefabs/Human survivor.prefab
-  artifactKey: Guid(0d956f691af78e3409cb0a1a18ff62e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Human survivor.prefab using Guid(0d956f691af78e3409cb0a1a18ff62e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aaa727d69df118861f84c4699701e90') in 0.021649 seconds
-  Import took 0.027235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000831 seconds.
-  path: Assets/Prefabs/Human survivor.prefab
-  artifactKey: Guid(0d956f691af78e3409cb0a1a18ff62e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Human survivor.prefab using Guid(0d956f691af78e3409cb0a1a18ff62e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aaa727d69df118861f84c4699701e90') in 0.017045 seconds
-  Import took 0.022299 seconds .
+  Time since last request: 2529.305155 seconds.
+  path: Assets/Scripts/DialogueGiver.cs
+  artifactKey: Guid(f7327bcdaad570640bc532050cdf7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DialogueGiver.cs using Guid(f7327bcdaad570640bc532050cdf7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ac1f808b8046374fc204c058f223e1') in 0.008593 seconds
+  Import took 0.028993 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

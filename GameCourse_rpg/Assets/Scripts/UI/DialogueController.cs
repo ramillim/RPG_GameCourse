@@ -19,7 +19,6 @@ public class DialogueController : MonoBehaviour
 
     private void RefreshView()
     {
-        
         StringBuilder storyTextBuilder = new StringBuilder();
         while (_story.canContinue)
             storyTextBuilder.AppendLine(_story.Continue());
