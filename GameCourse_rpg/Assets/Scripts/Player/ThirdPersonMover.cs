@@ -9,6 +9,7 @@ public class ThirdPersonMover : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private Rigidbody rb;
     private Animator _anim;
+    private float _mouseMovement;
 
     private void Start()
     {
@@ -22,18 +23,21 @@ public class ThirdPersonMover : MonoBehaviour
 
     private void Update()
     {
-        var mouseMovement = Input.GetAxis("Mouse X");
-        transform.Rotate(0, mouseMovement* Time.deltaTime * _turnspeed, 0);
+        _mouseMovement += Input.GetAxis("Mouse X");
+        
         
     }
 
     private void FixedUpdate()
     {
+        transform.Rotate(0, _mouseMovement* Time.deltaTime * _turnspeed, 0);
+        _mouseMovement = 0f;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         if (Input.GetKey(KeyCode.LeftShift) && vertical <= 1f)
             vertical *= 2f;
 
+        
         var velocity = new Vector3(horizontal, 0, vertical);
         velocity *= moveSpeed * Time.fixedDeltaTime;
         Vector3 offset = transform.rotation * velocity;
