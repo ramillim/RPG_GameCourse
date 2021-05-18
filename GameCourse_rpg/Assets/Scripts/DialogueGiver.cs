@@ -16,6 +16,12 @@ public class DialogueGiver : MonoBehaviour
     [SerializeField] private TextAsset _dialogue;
     [SerializeField] private GameObject _panel;
     private bool _isTalking;
+    private StaticMessage _staticMessage;
+
+    private void Start()
+    {
+        _staticMessage = GetComponent<StaticMessage>();
+    }
 
     private void Update()
     {
@@ -33,10 +39,13 @@ public class DialogueGiver : MonoBehaviour
         var player = other.GetComponent<ThirdPersonMover>();
         if (player != null)
         {
-            _panel.SetActive(true);
-            _isTalking = true;
-            if(giver == GiverType.Npc)
-                transform.LookAt(player.transform);
+            if (_staticMessage.isError == false)
+            {
+                _panel.SetActive(true);
+                _isTalking = true;
+                if (giver == GiverType.Npc)
+                    transform.LookAt(player.transform);
+            }
         }
     }
 
