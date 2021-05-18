@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26b7a3826c8c8b4bb274dbdfa9beac5, type: 3}
   m_Name: TurnTheGeneratorOn
   m_EditorClassIdentifier: 
-  Steps: []
+  _name: Turn on Generator.
+  _discription: Turn the generator on so the computer can open the door.
+  _notes: 
+  Steps:
+  - _instructions: Turn Generator on.
+    Objectives:
+    - _objectivetype: 0
