@@ -5,6 +5,7 @@ using UnityEngine;
 public class Quests : ScriptableObject
 {
     [SerializeField] private string _name;
+    [TextArea]
     [SerializeField] private string _discription;
 
     [Tooltip("Designer Notes, not visable to player.")] [SerializeField]
