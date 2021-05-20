@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26b7a3826c8c8b4bb274dbdfa9beac5, type: 3}
   m_Name: TurnTheGeneratorOn
   m_EditorClassIdentifier: 
-  _name: Turn on Generator.
-  _discription: Turn the generator on so the computer can open the door.
+  _displayName: Go to Generator
+  _description: The power is off you gotta turn it on to proceed.
   _notes: 
   Steps:
   - _instructions: Turn Generator on.
     Objectives:
     - _objectivetype: 0
+  _sprite: {fileID: 21300000, guid: 57c0bf12b471edd44b8837d08aeacaef, type: 3}
