@@ -562,8 +562,7 @@ GameObject:
   - component: {fileID: 6310005977075405350}
   - component: {fileID: 6310005977075405349}
   - component: {fileID: 6310005977075405348}
-  - component: {fileID: 654364177}
-  - component: {fileID: 654364183}
+  - component: {fileID: 2958885780121454254}
   m_Layer: 5
   m_Name: '[Canvas] Dialogue'
   m_TagString: Untagged
@@ -671,62 +670,18 @@ MonoBehaviour:
   - {fileID: 6310005976943642000}
   - {fileID: 6310005978599140532}
   - {fileID: 6310005978094465275}
---- !u!114 &654364177
-MonoBehaviour:
+--- !u!225 &2958885780121454254
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6310005977075405531}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d187195fee14749993b74bcb1b535af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6310005976890445926}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _gameEvent: {fileID: 11400000, guid: 8f5e21d7b270c2541856cf1697c5a292, type: 2}
---- !u!114 &654364183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6310005977075405531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d187195fee14749993b74bcb1b535af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6310005976890445926}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _gameEvent: {fileID: 11400000, guid: 662ca462604ef1c488bc740d72f4b3cb, type: 2}
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6310005977426506354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,8 +1180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -113.49951}
-  m_SizeDelta: {x: -80.7217, y: 458.7434}
+  m_AnchoredPosition: {x: -0.00012207031, y: -26.734009}
+  m_SizeDelta: {x: -80.7217, y: 324.47}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6310005978183948603
 CanvasRenderer:
@@ -1290,7 +1245,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

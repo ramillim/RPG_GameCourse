@@ -17,10 +17,12 @@ public class DialogueGiver : MonoBehaviour
     [SerializeField] private GameObject _panel;
     private bool _isTalking;
     private StaticMessage _staticMessage;
+    private DialogueController _dialogueController;
 
     private void Start()
     {
         _staticMessage = GetComponent<StaticMessage>();
+        _dialogueController = FindObjectOfType<DialogueController>();
     }
 
     private void Update()
@@ -29,7 +31,8 @@ public class DialogueGiver : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                FindObjectOfType<DialogueController>().StartDialogue(_dialogue);
+                
+                _dialogueController.Show();
             }
         }
     }
@@ -39,18 +42,15 @@ public class DialogueGiver : MonoBehaviour
         var player = other.GetComponent<ThirdPersonMover>();
         if (player != null)
         {
-            if (_staticMessage.isError == false)
-            {
-                _panel.SetActive(true);
-                _isTalking = true;
-                if (giver == GiverType.Npc)
+            _dialogueController.StartDialogue(_dialogue);
+            _isTalking = true;
+            if (giver == GiverType.Npc)
                     transform.LookAt(player.transform);
-            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _panel.SetActive(false);
+        _dialogueController.Hide();
     }
 }

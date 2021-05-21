@@ -1,21 +1,26 @@
+using System;
 using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
 
-public class DialogueController : MonoBehaviour
+public class DialogueController : ToggleablePanel
 {
     
     [SerializeField] private TMP_Text _storyText;
     [SerializeField] private Button[] _choiceButtons;
     Story _story;
+    
+
     [ContextMenu("Start Dialogue")]
     public void StartDialogue(TextAsset _dialogue)
     {
         _story = new Story(_dialogue.text);
         RefreshView();
+        Show();
     }
+    
 
     private void RefreshView()
     {
