@@ -14,9 +14,22 @@ public class Quest : ScriptableObject
 
     public List<Step> Steps;
     [SerializeField] private Sprite _sprite;
+    int _currentStepIndex;
     public string Description => _description;
     public string DisplayName => _displayName;
     public Sprite sprite => _sprite;
+
+    public void TryProgress()
+    {
+        var currentStep = GetCurrentStep();
+        if (currentStep.HasAllObjectivesCompleted())
+        {
+            _currentStepIndex++;
+        }
+    }
+
+
+    Step GetCurrentStep() => Steps[_currentStepIndex];
 }
 
 [Serializable]
@@ -25,6 +38,11 @@ public class Step
     [SerializeField] private string _instructions;
     public string Instructions => _instructions;
     public List<Objectives> Objectives;
+
+    public bool HasAllObjectivesCompleted()
+    {
+        return Objectives.TrueForAll(t => t.IsCompleted);
+    }
 }
 
 [Serializable]
@@ -38,6 +56,8 @@ public class Objectives
         Item,
         Kill,
     }
+
+    public bool IsCompleted { get; set; }
 
     public override string ToString()
     {

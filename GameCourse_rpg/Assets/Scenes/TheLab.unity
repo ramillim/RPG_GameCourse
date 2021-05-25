@@ -2184,9 +2184,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_ShowDebugText: 0
   m_Loop: 0
-  m_ChildCameras:
-  - {fileID: 1504578634}
-  - {fileID: 1696488218}
+  m_ChildCameras: []
   m_Instructions:
   - m_VirtualCamera: {fileID: 1504578634}
     m_Hold: 1
