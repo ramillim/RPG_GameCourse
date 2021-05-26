@@ -33,6 +33,7 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    [ContextMenu("Progress Quest")]
     public void ProgressQuest()
     {
         foreach (var quest in _activeQuests)

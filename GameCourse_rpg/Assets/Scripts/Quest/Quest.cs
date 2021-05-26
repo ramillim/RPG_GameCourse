@@ -6,6 +6,8 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(menuName = "Quest")]
 public class Quest : ScriptableObject
 {
+    public event Action Progressed;
+    
     [SerializeField] private string _displayName;
     [TextArea] [SerializeField] private string _description;
 
@@ -18,6 +20,9 @@ public class Quest : ScriptableObject
     public string Description => _description;
     public string DisplayName => _displayName;
     public Sprite sprite => _sprite;
+    public Step CurrentStep => Steps[_currentStepIndex];
+
+    void OnEnable() => _currentStepIndex = 0;
 
     public void TryProgress()
     {
@@ -25,6 +30,7 @@ public class Quest : ScriptableObject
         if (currentStep.HasAllObjectivesCompleted())
         {
             _currentStepIndex++;
+            Progressed?.Invoke();
         }
     }
 
@@ -49,6 +55,7 @@ public class Step
 public class Objectives
 {
     [SerializeField] private ObjectiveType _objectivetype;
+    [SerializeField] GameFlag _gameFlag;
 
     public enum ObjectiveType
     {
@@ -57,10 +64,24 @@ public class Objectives
         Kill,
     }
 
-    public bool IsCompleted { get; set; }
+    public bool IsCompleted
+    {
+        get
+        {
+            switch (_objectivetype)
+            {
+                case ObjectiveType.Flag: return _gameFlag.Value;
+                default: return false;
+            }
+        }
+    }
 
     public override string ToString()
     {
-        return _objectivetype.ToString();
+        switch (_objectivetype)
+        {
+            case ObjectiveType.Flag: return _gameFlag.name;
+            default: return _objectivetype.ToString();
+        }
     }
 }

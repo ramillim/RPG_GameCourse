@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Bool Game Flag")]
 public class GameFlag : ScriptableObject
 {
-    public bool value;
+    public bool Value;
 
-    void OnEnable() => value = default;
+    void OnEnable() => Value = default;
 }
