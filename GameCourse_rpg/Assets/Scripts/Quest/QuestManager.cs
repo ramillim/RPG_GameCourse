@@ -11,10 +11,11 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private List<Quest> _allQuests;
     public static QuestManager Instance { get; private set; }
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private void Awake() => Instance = this;
+
+    /*void Start() => GameFlag.AnyChanged += ProgressQuests;
+
+    void OnDestroy() => GameFlag.AnyChanged -= ProgressQuests;*/
 
     public void AddQuest(Quest quest)
     {
@@ -33,13 +34,13 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Progress Quest")]
-    public void ProgressQuest()
+    /*[ContextMenu("Progress Quest")]
+    public void ProgressQuests()
     {
         foreach (var quest in _activeQuests)
         {
             quest.TryProgress();
         }
-    }
+    }*/
 
 }
