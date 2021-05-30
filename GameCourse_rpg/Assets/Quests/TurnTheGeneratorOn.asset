@@ -21,7 +21,7 @@ MonoBehaviour:
     - _objectivetype: 0
       _gameFlag: {fileID: 11400000, guid: 0f14007a374bfd049ae6803900ebae6c, type: 2}
     - _objectivetype: 0
-      _gameFlag: {fileID: 11400000, guid: 0f14007a374bfd049ae6803900ebae6c, type: 2}
+      _gameFlag: {fileID: 11400000, guid: 48c863947afaa944aa314a055dda79a1, type: 2}
   - _instructions: Turn Generator on.
     Objectives:
     - _objectivetype: 0

@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class GameFlagTriggerArea : MonoBehaviour
 {
-    [SerializeField] GameFlag _gameFlag;
+    [SerializeField] BoolGameFlag boolGameFlag;
 
     void OnTriggerEnter(Collider other)
     {
-        _gameFlag.Set(true);
+        boolGameFlag.Set(true);
     }
 }

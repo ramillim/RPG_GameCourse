@@ -1,23 +1,17 @@
-using System;
+﻿using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Bool Game Flag")]
-public class GameFlag : ScriptableObject
+public abstract class GameFlag : ScriptableObject
 {
-    public bool Value { get; private set; }
-    //public static event Action AnyChanged;
     public event Action Changed;
+    protected void SendChange() => Changed?.Invoke();
+}
+
+public abstract class GameFlag<T> : GameFlag
+{
+    
+    public T Value { get; protected set; }
 
     void OnEnable() => Value = default;
-
     void OnDisable() => Value = default;
-
-    public void Set(bool value)
-    {
-        Value = value;
-        //AnyChanged?.Invoke();
-        Changed.Invoke();
-    }
-
-    
 }
