@@ -2,15 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using TMPro.EditorUtilities;
+//using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class StaticMessage : MonoBehaviour
 {
     public string errorText;
     public string otherText;
-    [SerializeField] private TMP_Text _message;
-    [SerializeField] private GameObject _panel;
+    [SerializeField] TMP_Text _message;
+    [SerializeField] GameObject _panel;
     public bool isError;
 
     public void setError()

@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d26b7a3826c8c8b4bb274dbdfa9beac5, type: 3}
-  m_Name: Turn on Generator
+  m_Name: TurnOnGenerator
   m_EditorClassIdentifier: 
-  _displayName: Activate Generator
-  _description: Find the working switch and turn on generator to open door.
+  _displayName: Turn On Generator
+  _description: Find the panel to turn on the generator and open the door
   _notes: 
   Steps:
-  - _instructions: Find Panels
+  - _instructions: Go find the panels
     Objectives:
     - _objectivetype: 0
       _gameFlag: {fileID: 11400000, guid: b65282419e6195d40834d189ec03ee08, type: 2}
-      _intGameFlag: {fileID: 0}
+      _required: 3
+  - _instructions: Find the un-broken panel
+    Objectives:
+    - _objectivetype: 0
+      _gameFlag: {fileID: 11400000, guid: 09f3cab98e8a97c4689cd7006e0dcffc, type: 2}
       _required: 0
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 57c0bf12b471edd44b8837d08aeacaef, type: 3}

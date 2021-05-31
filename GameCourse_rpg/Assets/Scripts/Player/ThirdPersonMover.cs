@@ -24,8 +24,6 @@ public class ThirdPersonMover : MonoBehaviour
     private void Update()
     {
         _mouseMovement += Input.GetAxis("Mouse X");
-        
-        
     }
 
     private void FixedUpdate()

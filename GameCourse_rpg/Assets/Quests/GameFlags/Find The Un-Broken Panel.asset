@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5887166b241ba8419cf3c3b587c6f7d, type: 3}
-  m_Name: Hide
+  m_Script: {fileID: 11500000, guid: 4294844a05d7f61409f8f1b709db0884, type: 3}
+  m_Name: Find The Un-Broken Panel
   m_EditorClassIdentifier: 

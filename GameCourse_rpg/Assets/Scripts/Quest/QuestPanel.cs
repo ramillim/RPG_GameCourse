@@ -44,10 +44,10 @@ public class QuestPanel : ToggleablePanel
 
     public void SelectQuest(Quest quest)
     {
-        _selectedQuest.Changed -= DisplayStepsandObjectives;
         _selectedQuest = quest;
         Bind();
         Show();
         _selectedQuest.Changed += DisplayStepsandObjectives;
+        //_selectedQuest.Changed -= DisplayStepsandObjectives;
     }
 }
