@@ -21,7 +21,7 @@ public class Quest : ScriptableObject
     public string DisplayName => _displayName;
     public Sprite sprite => _sprite;
     public Step CurrentStep => Steps[_currentStepIndex];
-
+    
     void OnEnable()
     {
         _currentStepIndex = 0;

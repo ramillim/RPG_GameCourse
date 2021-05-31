@@ -9,7 +9,6 @@ public abstract class GameFlag : ScriptableObject
 
 public abstract class GameFlag<T> : GameFlag
 {
-    
     public T Value { get; protected set; }
 
     void OnEnable() => Value = default;
