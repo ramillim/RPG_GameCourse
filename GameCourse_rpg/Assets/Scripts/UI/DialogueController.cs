@@ -1,4 +1,3 @@
-using System;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -61,6 +60,12 @@ public class DialogueController : ToggleablePanel
             {
                 string questName = tag.Remove(0, 2);
                 QuestManager.Instance.AddQuestByName(questName);
+            }
+            else if (tag.StartsWith("F."))
+            {
+                var values = tag.Split('.');
+                //string flagName = tag.Remove(0, 2);
+                FlagManager.Instance.Set(values[1], values[2]);
             }
         }
     }

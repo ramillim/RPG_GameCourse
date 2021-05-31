@@ -10,4 +10,10 @@ public class IntGameFlag : GameFlag<int>
         //AnyChanged?.Invoke();
         SendChange();
     }
+
+    public void Set(int value)
+    {
+        Value = value;
+        SendChange();
+    }
 }
