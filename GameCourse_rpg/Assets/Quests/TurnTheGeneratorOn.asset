@@ -19,11 +19,17 @@ MonoBehaviour:
   - _instructions: Look at Generator Panel
     Objectives:
     - _objectivetype: 0
-      _gameFlag: {fileID: 11400000, guid: 0f14007a374bfd049ae6803900ebae6c, type: 2}
+      _gameFlag: {fileID: 0}
+      _intGameFlag: {fileID: 11400000, guid: b65282419e6195d40834d189ec03ee08, type: 2}
+      _required: 4
     - _objectivetype: 0
-      _gameFlag: {fileID: 11400000, guid: 48c863947afaa944aa314a055dda79a1, type: 2}
+      _gameFlag: {fileID: 0}
+      _intGameFlag: {fileID: 0}
+      _required: 0
   - _instructions: Turn Generator on.
     Objectives:
     - _objectivetype: 0
-      _gameFlag: {fileID: 11400000, guid: 8df370677ce7fac4084d32e1fb99dea3, type: 2}
+      _gameFlag: {fileID: 0}
+      _intGameFlag: {fileID: 0}
+      _required: 0
   _sprite: {fileID: 21300000, guid: 57c0bf12b471edd44b8837d08aeacaef, type: 3}

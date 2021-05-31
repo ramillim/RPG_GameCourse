@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f7b53dae0844fcb081eef497b52ef8, type: 3}
-  m_Name: LookAt
+  m_Name: Look At Panels
   m_EditorClassIdentifier: 

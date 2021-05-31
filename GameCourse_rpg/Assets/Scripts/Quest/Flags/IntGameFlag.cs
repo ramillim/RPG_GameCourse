@@ -1,19 +1,12 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Counted Int Game Flag")]
+[CreateAssetMenu(menuName = "GamedFlag/Int")]
 public class IntGameFlag : GameFlag<int>
 {
     public void Modify(int value)
     {
         Value += value;
         //AnyChanged?.Invoke();
-        SendChange();
-    }
-
-    public void Set(int value)
-    {
-        Value = value;
         SendChange();
     }
 }
