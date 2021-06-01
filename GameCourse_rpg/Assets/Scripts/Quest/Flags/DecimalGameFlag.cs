@@ -4,4 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GamedFlag/Decimal")]
 public class DecimalGameFlag : GameFlag<decimal>
 {
+    
 }

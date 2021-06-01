@@ -7,14 +7,21 @@ public class FlagManager:  MonoBehaviour
     [SerializeField] List<GameFlag> _allFlags;
     Dictionary<string, GameFlag> _flagsByName;
     public static FlagManager Instance { get; private set; }
-    void Awake() => Instance = this;
+    void Awake()
+    {
+        Instance = this;
+    }
+
     void OnValidate()
     {
         Extensions.GetAllInstances<GameFlag>();
     }
-    void Start() =>
-        _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""), 
+    void Start()
+    {
+        _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""),
             v => v);
+    }
+
     public void Set(string flagName, string value)
     {
         if(_flagsByName.TryGetValue(flagName,out var flag) == false)

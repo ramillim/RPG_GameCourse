@@ -18,5 +18,13 @@ public abstract class GameFlag<T> : GameFlag
     {
         Value = value;
         SendChange();
+        PlayerPrefs.SetString(name, Value.ToString());
     }
+    
+}
+[Serializable]
+public class GameFlagData
+{
+    public string Name;
+    public string Value;
 }
