@@ -19,5 +19,6 @@ public class GamePersistence : MonoBehaviour
     void LoadGameFlags()
     {
         _gameData = new GameData();
+        FlagManager.Instance.Bind(_gameData.GameFlagDatas);
     }
 }

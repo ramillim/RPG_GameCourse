@@ -5,8 +5,14 @@ public class IntGameFlag : GameFlag<int>
 {
     public void Modify(int value)
     {
-        Value += value;
+        Set(Value + value);
         //AnyChanged?.Invoke();
         SendChange();
+    }
+
+    protected override void SetFromData(string value)
+    {
+        if(int.TryParse(value , out var intvalue))
+            Set(intvalue);
     }
 }
