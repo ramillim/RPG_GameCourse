@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GamePersistence : MonoBehaviour
 {
-    GameData _gameData;
+    public GameData _gameData;
     void Start() => LoadGameFlags();
 
     void OnDisable() => SaveGameFlags();
@@ -24,5 +24,6 @@ public class GamePersistence : MonoBehaviour
         if (_gameData == null)
             _gameData = new GameData();
         FlagManager.Instance.Bind(_gameData.GameFlagDatas);
+        InspectionManager.Bind(_gameData.InspectableDatas);
     }
 }
