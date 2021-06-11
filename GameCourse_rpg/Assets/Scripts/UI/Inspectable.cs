@@ -4,8 +4,14 @@ using System.Linq;
 using UnityEngine;
 
 public class Inspectable : MonoBehaviour
-{
-    public static HashSet<Inspectable> _inspectablesInRange = new HashSet<Inspectable>();
+{ 
+    static HashSet<Inspectable> _inspectablesInRange = new HashSet<Inspectable>();
+    [SerializeField] float _timeToInspect = 3f;
+    float _timeInspected;
+
+    public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
+    public float InspectionProgress => _timeInspected / _timeToInspect;
+
     public static event Action<bool> InspectablesInRangeChanged;
 
     void OnTriggerEnter(Collider other)
@@ -24,5 +30,21 @@ public class Inspectable : MonoBehaviour
             _inspectablesInRange.Remove(this);
             InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());
         }
+    }
+
+    public void Inspect()
+    {
+        _timeInspected += Time.deltaTime;
+        if (_timeInspected >= _timeToInspect)
+        {
+            CompleteInspection();
+        }
+    }
+
+    void CompleteInspection()
+    {
+        gameObject.SetActive(false);
+        _inspectablesInRange.Remove(this);
+        InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());
     }
 }
