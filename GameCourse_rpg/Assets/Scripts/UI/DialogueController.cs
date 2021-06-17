@@ -7,8 +7,8 @@ using Ink.Runtime;
 public class DialogueController : ToggleablePanel
 {
     
-    [SerializeField] private TMP_Text _storyText;
-    [SerializeField] private Button[] _choiceButtons;
+    [SerializeField] TMP_Text _storyText;
+    [SerializeField] Button[] _choiceButtons;
     Story _story;
     
 

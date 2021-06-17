@@ -47,6 +47,8 @@ public class Inspectable : MonoBehaviour
 
     public void Inspect()
     {
+        if(WasFullyInspected)
+            return;
         _data.TimeInspected += Time.deltaTime;
         if (_data.TimeInspected >= _timeToInspect)
         {
