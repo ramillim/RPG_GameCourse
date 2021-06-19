@@ -15,6 +15,7 @@ public class Inspectable : MonoBehaviour
     
     [SerializeField] float _timeToInspect = 3f;
     [SerializeField] UnityEvent OnInspectionCompleted;
+    [SerializeField] Inspectable _required;
     
     InspectableData _data;
 
@@ -29,12 +30,14 @@ public class Inspectable : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !WasFullyInspected)
+        if (other.CompareTag("Player") && !WasFullyInspected && MeetsCondition)
         {
             _inspectablesInRange.Add(this);
             InspectablesInRangeChanged?.Invoke(true);
         }
     }
+
+    public bool MeetsCondition => _required == null || _required.WasFullyInspected;
 
     void OnTriggerExit(Collider other)
     {
