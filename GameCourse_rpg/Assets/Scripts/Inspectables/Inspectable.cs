@@ -10,7 +10,7 @@ public class Inspectable : MonoBehaviour
 
     public static event Action<bool> InspectablesInRangeChanged;
     public static IReadOnlyCollection<Inspectable> InspectablesInRange => _inspectablesInRange;
-    public float InspectionProgress => _data.TimeInspected / _timeToInspect;
+    public float InspectionProgress => _data?.TimeInspected ?? 0f / _timeToInspect;
     public bool WasFullyInspected => InspectionProgress >= 1f;
 
     [SerializeField] float _timeToInspect = 3f;
@@ -27,7 +27,7 @@ public class Inspectable : MonoBehaviour
     public void Bind(InspectableData inspectableData)
     {
         _data = inspectableData;
-        if (_data.TimeInspected >= _timeToInspect)
+        if (WasFullyInspected)
         {
             CompleteInspection();
         }
@@ -67,7 +67,8 @@ public class Inspectable : MonoBehaviour
         if (WasFullyInspected)
             return;
         _data.TimeInspected += Time.deltaTime;
-        if (_data.TimeInspected >= _timeToInspect)
+       //Debug.Log($"{_data.TimeInspected}{WasFullyInspected}{_data.TimeInspected <= _timeToInspect}", gameObject);
+        if (WasFullyInspected)
         {
             CompleteInspection();
         }
@@ -75,6 +76,7 @@ public class Inspectable : MonoBehaviour
 
     void CompleteInspection()
     {
+        Debug.Log("Completed Inspection" , gameObject);
         //gameObject.SetActive(false);
         _inspectablesInRange.Remove(this);
         InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());

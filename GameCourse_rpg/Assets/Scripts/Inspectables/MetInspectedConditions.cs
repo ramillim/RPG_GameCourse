@@ -12,7 +12,7 @@ public class MetInspectedConditions : MonoBehaviour, IMet
         if (_requiredInspectable != null)
         {
             Gizmos.color = Color.green;
-            //Gizmos.color = Met() ? Color.green : Color.red;
+            Gizmos.color = Met() ? Color.green : Color.red;
             Gizmos.DrawLine(transform.position, _requiredInspectable.transform.position);
         }
             
