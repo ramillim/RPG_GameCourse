@@ -2517,7 +2517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToInspect: 3
-  textLife: 5
   _completedInspectionText: Yellow Button Inspected Ermagerd.
   OnInspectionCompleted:
     m_PersistentCalls:
@@ -5150,7 +5149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToInspect: 3
-  textLife: 5
   _completedInspectionText: Blue Button Inspected Ermagerd.
   OnInspectionCompleted:
     m_PersistentCalls:
@@ -12974,7 +12972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeToInspect: 3
-  textLife: 5
   _completedInspectionText: Greem Button Inspected Ermagerd.
   OnInspectionCompleted:
     m_PersistentCalls:

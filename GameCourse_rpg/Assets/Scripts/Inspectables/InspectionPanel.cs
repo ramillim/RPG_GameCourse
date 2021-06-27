@@ -20,13 +20,15 @@ public class InspectionPanel : MonoBehaviour
     {
         _hintText.enabled = false;
         Inspectable.InspectablesInRangeChanged += UpdateHintTextState;
-        Inspectable.OnAnyInspectionComplete += HandleAnyInspectionComplete;
+        Inspectable.OnAnyInspectionComplete += ShowCompletedInspectionText;
     }
 
-    void HandleAnyInspectionComplete(Inspectable inspectable, string completeInspectionText, float textLife)
+    void ShowCompletedInspectionText(Inspectable inspectable, string completeInspectionText)
     {
         _completedInspectionText.SetText(completeInspectionText);
         _completedInspectionText.enabled = true;
+        float textLife = completeInspectionText.Length / 5f;
+        textLife = Mathf.Clamp(textLife, 3f, 15f);
         StartCoroutine(FadeCompletedText(textLife));
     }
 
