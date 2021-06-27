@@ -17,6 +17,7 @@ public class Inspectable : MonoBehaviour
     [SerializeField] float _timeToInspect = 3f;
     [SerializeField, TextArea] string _completedInspectionText;
     [SerializeField] UnityEvent OnInspectionCompleted;
+    [SerializeField] bool _requireMiniGame;
 
     InspectableData _data;
     IMet[] _allConditions;
@@ -72,7 +73,10 @@ public class Inspectable : MonoBehaviour
        //Debug.Log($"{_data.TimeInspected}{WasFullyInspected}{_data.TimeInspected <= _timeToInspect}", gameObject);
         if (WasFullyInspected)
         {
-            CompleteInspection();
+            if (_requireMiniGame)
+                MiniGameManager.Instance.StartMiniGame(CompleteInspection);
+            else
+                CompleteInspection();
         }
     }
 
