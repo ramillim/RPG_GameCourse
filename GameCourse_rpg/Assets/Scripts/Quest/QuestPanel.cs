@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -11,10 +7,10 @@ public class QuestPanel : ToggleablePanel
 {
     [SerializeField] private Quest _selectedQuest;
     Step _selectedStep => _selectedQuest.CurrentStep;
-    [SerializeField] private TMP_Text _nameText;
-    [SerializeField] private TMP_Text _descriptionText;
-    [SerializeField] private TMP_Text _currentObjectives;
-    [SerializeField] private Image _iconImage;
+    [SerializeField] TMP_Text _nameText;
+    [SerializeField] TMP_Text _descriptionText;
+    [SerializeField] TMP_Text _currentObjectives;
+    [SerializeField] Image _iconImage;
 
     [ContextMenu("Bind")]
     public void Bind()

@@ -55,7 +55,7 @@ public class Quest : ScriptableObject
 [Serializable]
 public class Step
 {
-    [SerializeField] private string _instructions;
+    [SerializeField] string _instructions;
     public string Instructions => _instructions;
     public List<Objectives> Objectives;
 

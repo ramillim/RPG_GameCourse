@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    [SerializeField] private QuestPanel _questPanel;
-    private List<Quest> _activeQuests = new List<Quest>();
-    [SerializeField] private List<Quest> _allQuests;
+    [SerializeField] QuestPanel _questPanel;
+    List<Quest> _activeQuests = new List<Quest>();
+    [SerializeField] List<Quest> _allQuests;
     public static QuestManager Instance { get; private set; }
 
     private void Awake() => Instance = this;
