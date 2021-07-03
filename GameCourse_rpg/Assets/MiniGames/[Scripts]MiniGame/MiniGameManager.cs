@@ -11,18 +11,11 @@ public class MiniGameManager : MonoBehaviour
     public static MiniGameManager Instance { get; private set; }
 
     void Awake() => Instance = this;
-
-    /*void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            _completeInspection?.Invoke();
-            _completeInspection = null;
-        }
-    }*/
+    
 
     public void StartMiniGame(Action<MiniGameResult> completeInspection)
     {
-        WinLoseMiniGamePanel.Instance.StartMiniGame(completeInspection);
+        //WinLoseMiniGamePanel.Instance.StartMiniGame(completeInspection);
+        FlippyBoxMiniGamePanel.Instance.StartMiniGame(completeInspection);
     }
 }
