@@ -6,7 +6,7 @@ using UnityEngine;
 public class FlippyBoxMovingBlock : MonoBehaviour, IRestart
 {
     Rigidbody2D _rigidBody;
-    [SerializeField] float moveSpeed = 2.5f;
+    float moveSpeed => FlippyBoxMiniGamePanel.Instance.currentSettings.MovingBoxSpeed;
     Vector3 _startingPosition;
 
     void Awake()

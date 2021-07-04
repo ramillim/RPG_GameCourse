@@ -21,6 +21,7 @@ public class Inspectable : MonoBehaviour
 
     InspectableData _data;
     IMet[] _allConditions;
+    [SerializeField] FlippyBoxMinigameSettings _miniGameSettings;
 
     void Awake()
     {
@@ -75,7 +76,7 @@ public class Inspectable : MonoBehaviour
         {
             if (_requireMiniGame)
             {
-                MiniGameManager.Instance.StartMiniGame(HandleMiniGameCompleted);
+                MiniGameManager.Instance.StartMiniGame(_miniGameSettings, HandleMiniGameCompleted);
                 _inspectablesInRange.Remove(this);
                 InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());
             }
