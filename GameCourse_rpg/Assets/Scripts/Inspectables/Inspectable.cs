@@ -74,7 +74,11 @@ public class Inspectable : MonoBehaviour
         if (WasFullyInspected)
         {
             if (_requireMiniGame)
+            {
                 MiniGameManager.Instance.StartMiniGame(HandleMiniGameCompleted);
+                _inspectablesInRange.Remove(this);
+                InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());
+            }
             else
                 CompleteInspection();
         }
@@ -84,7 +88,12 @@ public class Inspectable : MonoBehaviour
     {
         if (result == MiniGameResult.won)
             CompleteInspection();
-        else if (result == MiniGameResult.lose) _data.TimeInspected = 0f;
+        else if (result == MiniGameResult.lose)
+        {
+            _data.TimeInspected = 0f;
+            _inspectablesInRange.Add(this);
+            InspectablesInRangeChanged.Invoke(_inspectablesInRange.Any());
+        }
     }
 
     void CompleteInspection()
