@@ -1,6 +1,6 @@
 using UnityEngine;
 [CreateAssetMenu(menuName = "MiniGame/Flippy Box Settings", fileName = "FlippyBoxSettings-")]
-public class FlippyBoxMinigameSettings : ScriptableObject
+public class FlippyBoxMinigameSettings : MiniGameSettings
 {
     public float MovingBoxSpeed = 5f;
     public Vector2 JumpVelocity = Vector2.up + Vector2.right;

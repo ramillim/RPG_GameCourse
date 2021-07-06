@@ -655,7 +655,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &6167461653088412824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52a919a96b7bdd4382183baf94d5ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpVelocity: {x: 2, y: 5}
+  _spinSpeed: 2
 --- !u!1 &6167461653140100069
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6167461653140100068}
+  - component: {fileID: 180297918}
   m_Layer: 0
   m_Name: '[MiniGAME]Flippy Box'
   m_TagString: Untagged
@@ -737,6 +738,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &180297918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6167461653140100069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175d91e988c24126bb4941e82c6c3b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultSettings: {fileID: 11400000, guid: b0af971c34d874546951942bd8cc4f32, type: 2}
 --- !u!1001 &6167461651457228588
 PrefabInstance:
   m_ObjectHideFlags: 0

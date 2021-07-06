@@ -19,7 +19,7 @@ public class FlippyBoxMovingBlock : MonoBehaviour, IRestart
     {
         Vector2 movement = Vector2.left * (moveSpeed * Time.deltaTime);
         _rigidBody.position += movement;
-        if (_rigidBody.position.x < -15f)
+        if (transform.localPosition.x < -15f)
             _rigidBody.position += new Vector2(30f, 0);
     }
     public void Restart()

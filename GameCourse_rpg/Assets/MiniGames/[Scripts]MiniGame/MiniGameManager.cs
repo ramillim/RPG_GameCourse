@@ -13,9 +13,12 @@ public class MiniGameManager : MonoBehaviour
     void Awake() => Instance = this;
     
 
-    public void StartMiniGame(FlippyBoxMinigameSettings settings, Action<MiniGameResult> completeInspection)
+    public void StartMiniGame(MiniGameSettings settings, Action<MiniGameResult> completeInspection)
     {
         //WinLoseMiniGamePanel.Instance.StartMiniGame(completeInspection);
-        FlippyBoxMiniGamePanel.Instance.StartMiniGame(settings, completeInspection);
+        if(settings is FlippyBoxMinigameSettings flippyBoxMinigameSettings)
+            FlippyBoxMiniGamePanel.Instance.StartMiniGame(flippyBoxMinigameSettings, completeInspection);
+        else if (settings is WinLoseMiniGameSettings winLoseMiniGameSettings)
+            WinLoseMiniGamePanel.Instance.StartMiniGame(completeInspection);
     }
 }

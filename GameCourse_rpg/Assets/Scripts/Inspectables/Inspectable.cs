@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class Inspectable : MonoBehaviour
 {
+    
     static HashSet<Inspectable> _inspectablesInRange = new HashSet<Inspectable>();
 
     public static event Action<bool> InspectablesInRangeChanged;
@@ -21,7 +22,7 @@ public class Inspectable : MonoBehaviour
 
     InspectableData _data;
     IMet[] _allConditions;
-    [SerializeField] FlippyBoxMinigameSettings _miniGameSettings;
+    [SerializeField] MiniGameSettings _miniGameSettings;
 
     void Awake()
     {
