@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryPanelSlots : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InventoryPanelSlots : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler , IDragHandler
 {
     ItemSlot _itemSlot;
-    [SerializeField] Image itemIcon;
+    [SerializeField] Image _itemIcon;
+    [SerializeField] Image _draggedItemIcon;
     [SerializeField] Outline _outline;
+    [SerializeField] Color _draggingColor = Color.magenta;
 
     public void Bind(ItemSlot itemSlot)
     {
@@ -19,13 +21,13 @@ public class InventoryPanelSlots : MonoBehaviour, IPointerEnterHandler, IPointer
     {
         if (_itemSlot.Item != null)
         {
-            itemIcon.sprite = _itemSlot.Item.Icon;
-            itemIcon.enabled = true;
+            _itemIcon.sprite = _itemSlot.Item.Icon;
+            _itemIcon.enabled = true;
         }
         else
         {
-            itemIcon.sprite = null;
-            itemIcon.enabled = false;
+            _itemIcon.sprite = null;
+            _itemIcon.enabled = false;
         }
     }
 
@@ -37,5 +39,26 @@ public class InventoryPanelSlots : MonoBehaviour, IPointerEnterHandler, IPointer
     public void OnPointerExit(PointerEventData eventData)
     {
         _outline.enabled = false;
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        if (_itemSlot.IsEmpty)
+            return;
+        _itemIcon.color = _draggingColor;
+        _draggedItemIcon.sprite = _itemIcon.sprite;
+        _draggedItemIcon.enabled = true;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        _itemIcon.color = Color.white;
+        _draggedItemIcon.sprite = null;
+        _draggedItemIcon.enabled = false;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        _draggedItemIcon.transform.position = eventData.position;
     }
 }
