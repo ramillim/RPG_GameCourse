@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryPanelSlots : MonoBehaviour
+public class InventoryPanelSlots : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     ItemSlot _itemSlot;
     [SerializeField] Image itemIcon;
+    [SerializeField] Outline _outline;
 
     public void Bind(ItemSlot itemSlot)
     {
@@ -25,5 +27,15 @@ public class InventoryPanelSlots : MonoBehaviour
             itemIcon.sprite = null;
             itemIcon.enabled = false;
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _outline.enabled = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _outline.enabled = false;
     }
 }

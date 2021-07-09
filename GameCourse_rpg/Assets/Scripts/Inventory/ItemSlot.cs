@@ -22,7 +22,9 @@ public class ItemSlot
     public void Bind(SlotData slotData)
     {
         _slotData = slotData;
-        Debug.LogError($"Attempted to load item {_slotData.ItemName}");
+        var item = Resources.Load<Item>("Items/" + _slotData.ItemName);
+        SetItem(item);
+        //Debug.LogError($"Attempted to load item {_slotData.ItemName}");
     }
 }
 [Serializable]
