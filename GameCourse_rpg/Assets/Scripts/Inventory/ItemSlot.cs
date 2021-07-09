@@ -24,7 +24,13 @@ public class ItemSlot
         _slotData = slotData;
         var item = Resources.Load<Item>("Items/" + _slotData.ItemName);
         SetItem(item);
-        //Debug.LogError($"Attempted to load item {_slotData.ItemName}");
+    }
+
+    public void Swap(ItemSlot slotToSwapWith)
+    {
+        var itemInOtherSlot = slotToSwapWith.Item;
+        slotToSwapWith.SetItem(Item);
+        SetItem(itemInOtherSlot);
     }
 }
 [Serializable]
