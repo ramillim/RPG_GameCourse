@@ -3,11 +3,11 @@ using UnityEngine;
 public class GamePersistence : MonoBehaviour
 {
     public GameData _gameData;
-    void Start() => LoadGameFlags();
+    void Start() => LoadGame();
 
-    void OnDisable() => SaveGameFlags();
+    void OnDisable() => SaveGame();
 
-    void SaveGameFlags()
+    void SaveGame()
     {
         Debug.Log("Saving Game Flags");
         
@@ -17,7 +17,7 @@ public class GamePersistence : MonoBehaviour
         Debug.Log("Saving Game Flags Complete");
     }
 
-    void LoadGameFlags()
+    void LoadGame()
     {
         var json = PlayerPrefs.GetString("GameData");
         _gameData = JsonUtility.FromJson<GameData>(json);
@@ -25,5 +25,6 @@ public class GamePersistence : MonoBehaviour
             _gameData = new GameData();
         FlagManager.Instance.Bind(_gameData.GameFlagDatas);
         InspectionManager.Bind(_gameData.InspectableDatas);
+        Inventory.Instance.Bind(_gameData.SlotDatas);
     }
 }

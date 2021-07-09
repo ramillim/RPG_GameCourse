@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TheLab.unity
+    guid: fa36e71fea707a343b3dba56e5a28fad
   m_configObjects: {}
