@@ -30,7 +30,6 @@ public class CraftingManager : MonoBehaviour
 
         return true;
     }
-    //fix later**
-    
-    //void OnValidate() => _recipes = Extensions.GetAllInstances<Recipe>();
+
+    void OnValidate() => _recipes = Extensions.GetAllInstances<Recipe>();
 }

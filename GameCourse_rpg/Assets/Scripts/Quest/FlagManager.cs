@@ -16,7 +16,7 @@ public class FlagManager:  MonoBehaviour
     void OnValidate()
     {
 #if UNITY_EDITOR
-        Extensions.GetAllInstances<GameFlag>();
+        _allFlags = Extensions.GetAllInstances<GameFlag>();
 #endif
     }
     
@@ -31,6 +31,7 @@ public class FlagManager:  MonoBehaviour
         if(_flagsByName.TryGetValue(flagName,out var flag) == false)
         {
             Debug.LogError($"Flag not found {flagName}");
+            return;
         }
 
         if (flag is IntGameFlag intGameFlag)
