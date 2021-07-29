@@ -5,16 +5,24 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     const int General_Size = 9;
+    const int Crafting_Size = 9;
+    
     public ItemSlot[] GeneralSlots = new ItemSlot[General_Size];
+    public ItemSlot[] CraftingSlots = new ItemSlot[Crafting_Size];
+    
     [SerializeField] Item _debugItem;
     public static Inventory Instance { get; private set; }
 
     void Awake()
     {
         Instance = this;
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < General_Size; i++)
         {
             GeneralSlots[i] = new ItemSlot();
+        }
+        for (int i = 0; i < Crafting_Size; i++)
+        {
+            CraftingSlots[i] = new ItemSlot();
         }
     }
 
@@ -47,6 +55,18 @@ public class Inventory : MonoBehaviour
             if (slotData == null)
             {
                 slotData = new SlotData() {SlotName = "General" + i};
+                slotDatas.Add(slotData);
+            }
+
+            slot.Bind(slotData);
+        }
+        for (var i = 0; i < CraftingSlots.Length; i++)
+        {
+            var slot = CraftingSlots[i];
+            var slotData = slotDatas.FirstOrDefault(t => t.SlotName == "Crafting" + i);
+            if (slotData == null)
+            {
+                slotData = new SlotData() {SlotName = "Crafting" + i};
                 slotDatas.Add(slotData);
             }
 
