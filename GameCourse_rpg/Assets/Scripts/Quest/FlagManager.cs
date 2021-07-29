@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlagManager:  MonoBehaviour
 {
-    [SerializeField] List<GameFlag> _allFlags;
+    [SerializeField] GameFlag[] _allFlags;
     Dictionary<string, GameFlag> _flagsByName;
     public static FlagManager Instance { get; private set; }
     void Awake()
@@ -12,12 +12,14 @@ public class FlagManager:  MonoBehaviour
         Instance = this;
     }
 
-    #if UNITY_EDITOR
+
     void OnValidate()
     {
+#if UNITY_EDITOR
         Extensions.GetAllInstances<GameFlag>();
+#endif
     }
-    #endif
+    
     void Start()
     {
         _flagsByName = _allFlags.ToDictionary(k => k.name.Replace(" ", ""),
